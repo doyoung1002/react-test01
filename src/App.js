@@ -33,17 +33,18 @@ function App() {
       <section id="name">
         <h1>Todo List</h1>
       </section>
-      <section id="cards">
+
+      <div className="cards">
         {
           list.map((item) => {
             return (
               <div className="card" key={item.id}>
-                {item.list}
+                <h2>{item.list}</h2>
               </div>
             )
           })
         }
-      </section>
+      </div>
     </div>
   )
 }
